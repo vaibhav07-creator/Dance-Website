@@ -1,0 +1,49 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+block style
+    style
+      include ../static/style.css
+      include ../static/media.css
+
+block content 
+    section#introsection
+        p Welcome to 
+        p vaibhav's Dance 
+        p academy 
+        div.small
+            |
+    section#missionsection 
+        h1 Our Mission
+        div.card 
+            h3 Dance Perfection
+            div.card-box 
+                div.card-img 
+                    img(src="logoy.png")
+                div.card-content 
+                    p this is the best dance academy 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, deserunt fugiat blanditiis.
+        div.card 
+            h3 You Can Be Best
+            div.card-box 
+                div.card-img 
+                    img(src="logop.png")
+                div.card-content 
+                    p this is the best dance academy 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quo commodi dicta.
+        div.card 
+            h3 Expert Learning
+            div.card-box 
+                div.card-img 
+                    img(src="logob.png")
+                div.card-content 
+                    p this is the best dance academy
+                    p Lorem ipsum dolor sit consectetur adipisicing elit. Dicta laudantium quisquam! 
+    section#sponsorsection
+        h2 Our Sponsors
+        div#sponsors
+            img(src = "fb logo.png" , alt = "sponsors image" , Class = "spimage")
+            img(src = "ig logo.png" , alt = "sponsors image" , Class = "spimage")
+            img(src = "sc logo.jpg" , alt = "sponsors image" , Class = "spimage")
+            img(src = "skypelogo.png" , alt = "sponsors image" , Class = "spimage")

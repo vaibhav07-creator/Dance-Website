@@ -1,0 +1,56 @@
+doctype html
+html
+  head
+    title vaibhav dance academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar.top 
+        ul
+            div#logo 
+                img(src="../static/img/star.png")
+                | VDA
+            li #[a(href = "/") Home] 
+            li #[a(href = "/") About] 
+            li #[a(href = "/") Services] 
+            li #[a(href = "/") Class info]
+            li #[a(href = "/contact") Contact]
+    section#introsection
+        | Welcome to 
+        | Vaibhav's Dance academy 
+        div.small
+            | EAT DANCE SLEEP REPEAT
+    section#missionsection 
+        h1 Our Mission
+        div.card 
+            h3 Dance Perfection
+            div.card-box 
+                div.card-img 
+                    img(src="logoy.png")
+                div.card-content 
+                    p this is the best dance academy 
+        div.card 
+            h3 You Can Be Best
+            div.card-box 
+                div.card-img 
+                    img(src="logob.png")
+                div.card-content 
+                    p this is the best dance academy 
+        div.card 
+            h3 Expert Learning
+            div.card-box 
+                div.card-img 
+                    img(src="logop.png")
+                div.card-content 
+                    p this is the best dance academy 
+    section#sponsorsection
+        h2 Our Sponsors
+        div#sponsors
+            img(src = "fb logo.png" , alt = "sponsors image" , Class = "spimage")
+            img(src = "ig logo.png" , alt = "sponsors image" , Class = "spimage")
+            img(src = "sc logo.jpg" , alt = "sponsors image" , Class = "spimage")
+            img(src = "skypelogo.png" , alt = "sponsors image" , Class = "spimage")
+    footer#footer 
+        | Copyright © 2019 VaibhavDanceAcademy.com |All Rights Reserved
+    script
+      include ../static/index.js
